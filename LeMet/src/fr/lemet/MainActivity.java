@@ -80,7 +80,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        System.out.println("gdfgd");
+        System.out.println("gdfgd");//à quoi ça sert ??
         return true;
     }
     
