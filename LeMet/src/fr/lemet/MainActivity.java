@@ -165,7 +165,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
             TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
-            dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            dummyTextView.setText("ta maman n°"+Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
