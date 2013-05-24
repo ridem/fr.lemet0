@@ -10,13 +10,17 @@
             android:layout_marginTop="22dp"
             android:gravity="center"
             android:text="Plan du réseau" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
-    <ImageView
+
+    <fr.lemet.PinchImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/testm"
             android:src="@drawable/testm"
-            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
-            android:layout_marginBottom="21dp" android:layout_below="@+id/textView1"/>
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="21dp"
+            android:layout_below="@+id/textView1"
+            android:adjustViewBounds="true"/>
 
 
 </RelativeLayout>
