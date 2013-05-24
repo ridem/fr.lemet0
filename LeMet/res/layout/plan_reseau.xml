@@ -7,11 +7,16 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="22dp"
             android:gravity="center"
-            android:text="Plan du réseau" />
+            android:text="Plan du réseau" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/dsc00050"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_marginBottom="21dp" android:layout_below="@+id/textView1"/>
+
 
 </RelativeLayout>
