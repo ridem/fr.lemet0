@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <EditText
+            android:id="@+id/depart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Départ"
+            android:inputType="text"
+            android:layout_marginTop="50dp"
+            />
+
+    <EditText
+            android:id="@+id/arrivee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Arrivée"
+            android:inputType="text"
+            android:layout_below="@+id/depart"
+            android:layout_marginTop="50dp"
+            />
+
+    <Button
+            android:id="@+id/recherche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rechercher"
+            android:layout_below="@+id/arrivee"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
