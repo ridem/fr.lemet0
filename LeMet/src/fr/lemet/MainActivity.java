@@ -9,25 +9,25 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    public final static String plans = "com.example.lemet.plans";
-    public final static String horaires = "com.example.lemet.horaires";
-    public final static String itineraire = "com.example.lemet.itineraire";
+            public final static String plans = "com.example.lemet.plans";
+            public final static String horaires = "com.example.lemet.horaires";
+            public final static String itineraire = "com.example.lemet.itineraire";
 
 
 
-    private Button passerellePlans = null;
-    private Button passerelleHoraires = null;
-    private Button passerelleItineraire = null;
+            private Button passerellePlans = null;
+            private Button passerelleHoraires = null;
+            private Button passerelleItineraire = null;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_main);
 
-        passerellePlans = (Button) findViewById(R.id.plans);
-        passerelleHoraires = (Button) findViewById(R.id.horaires);
-        passerelleItineraire = (Button) findViewById(R.id.itineraire);
+                passerellePlans = (Button) findViewById(R.id.plans);
+                passerelleHoraires = (Button) findViewById(R.id.horaires);
+                passerelleItineraire = (Button) findViewById(R.id.itineraire);
 
 
 
