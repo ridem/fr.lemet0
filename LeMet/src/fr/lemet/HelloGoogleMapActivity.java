@@ -114,4 +114,6 @@ public class HelloGoogleMapActivity extends MapActivity implements
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
+    // Est-ce que tu vois cette modif ?s
+
 }
