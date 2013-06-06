@@ -115,5 +115,6 @@ public class HelloGoogleMapActivity extends MapActivity implements
     }
 
     // Est-ce que tu vois cette modif ?s
+    // et toi ?
 
 }
