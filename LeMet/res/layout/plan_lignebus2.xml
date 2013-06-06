@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
-    <TextView
-            android:id="@+id/textView1"
+    <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:gravity="center"
-            android:text="Plan du réseau" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
-
-    <fr.lemet.TouchImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/testm"
-            android:src="@drawable/testm"
+            android:id="@+id/ligne1vertical"
+            android:src="@drawable/ligne1vertical"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="21dp"
             android:layout_below="@+id/textView1"
             android:adjustViewBounds="true"/>
-
 
 </RelativeLayout>

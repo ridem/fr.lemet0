@@ -8,8 +8,10 @@ import android.widget.Button;
 
 public class Plans extends Activity {
     public final static String planReseau = "com.example.lemet.planReseau";
+    public final static String planLigne = "com.example.lemet.planLigne";
 
     private Button passerellePlanReseau = null;
+    private Button passerellePlanLigne = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,7 @@ public class Plans extends Activity {
         setContentView(R.layout.layout_plans);
 
         passerellePlanReseau = (Button) findViewById(R.id.plan_reseau);
+        passerellePlanLigne = (Button) findViewById(R.id.plan_lignes);
 
         passerellePlanReseau.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +28,16 @@ public class Plans extends Activity {
                 Intent activitePlanReseau = new Intent(Plans.this, PlanReseau.class);
                 activitePlanReseau.putExtra(planReseau, 4);
                 startActivity(activitePlanReseau);
+            }
+        });
+
+        passerellePlanLigne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent activitePlanLigne = new Intent(Plans.this, PlanLigne.class);
+                activitePlanLigne.putExtra(planLigne, 5);
+                startActivity(activitePlanLigne);
             }
         });
     }

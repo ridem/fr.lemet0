@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <TextView
+            android:id="@+id/plandeslignes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Plan des lignes"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:id="@+id/mettis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mettis"
+            android:layout_below="@+id/plandeslignes"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/mettis_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mettis A"
+            android:layout_below="@+id/mettis"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/mettis_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mettis B"
+            android:layout_below="@+id/mettis_a"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <TextView
+            android:id="@+id/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus"
+            android:layout_below="@+id/mettis_b"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/bus_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 1"
+            android:layout_below="@+id/bus"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/bus_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 2"
+            android:layout_below="@+id/bus_1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/bus_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 3"
+            android:layout_below="@+id/bus_2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/bus_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 4"
+            android:layout_below="@+id/bus_3"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/bus_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 5"
+            android:layout_below="@+id/bus_4"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/bus_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 11"
+            android:layout_alignTop="@+id/bus_1"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/bus_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 12"
+            android:layout_alignTop="@+id/bus_2"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/bus_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 13"
+            android:layout_alignTop="@+id/bus_3"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/bus_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 14"
+            android:layout_alignTop="@+id/bus_4"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/bus_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 15"
+            android:layout_alignTop="@+id/bus_5"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/bus_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 16"
+            android:layout_alignTop="@+id/bus_11"
+            android:layout_toRightOf="@+id/plandeslignes"/>
+
+    <Button
+            android:id="@+id/bus_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ligne 17"
+
+            android:layout_above="@+id/bus_3"
+            android:layout_alignLeft="@+id/bus_16"/>
+
+
+</RelativeLayout>
