@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class PlanReseau extends Activity {
+public class PlanLigneMettis extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

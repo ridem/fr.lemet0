@@ -105,6 +105,10 @@
                 android:name="fr.lemet.PlanLigneB"
                 android:label="@string/app_name" >
         </activity>
+        <activity
+                android:name="fr.lemet.PlanLigneMettis"
+                android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

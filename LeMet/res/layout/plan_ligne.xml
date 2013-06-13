@@ -28,8 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mettis A"
-            android:layout_below="@+id/mettis"
-            android:layout_marginTop="5dp"
+            android:layout_below="@+id/plandeslignes"
+            android:layout_marginTop="40dp"
             android:layout_marginLeft="20dp"/>
 
     <Button
@@ -40,6 +40,15 @@
             android:layout_below="@+id/mettis_a"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"/>
+
+    <Button
+            android:id="@+id/mettis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan des Mettis"
+            android:layout_below="@+id/plan des lignes"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="150dp"/>
 
     <TextView
             android:id="@+id/bus"

@@ -52,6 +52,9 @@ public class PlanLigne extends Activity {
     public final static String planLigneB = "com.example.lemet.planLigneB";
     private Button passerellePlanLigneB = null;
 
+    public final static String planLigneMettis = "com.example.lemet.planLigneMettis";
+    private Button passerellePlanLigneMettis = null;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plan_ligne);
@@ -70,6 +73,7 @@ public class PlanLigne extends Activity {
         passerellePlanLigneBus17 = (Button) findViewById(R.id.bus_17);
         passerellePlanLigneA = (Button) findViewById(R.id.mettis_a);
         passerellePlanLigneB = (Button) findViewById(R.id.mettis_b);
+        passerellePlanLigneMettis = (Button) findViewById(R.id.mettis);
 
         passerellePlanLigneBus1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -208,6 +212,16 @@ public class PlanLigne extends Activity {
                 Intent activitePlanLigneB = new Intent(PlanLigne.this, PlanLigneB.class);
                 activitePlanLigneB.putExtra(planLigneB, 14);
                 startActivity(activitePlanLigneB);
+            }
+        });
+
+        passerellePlanLigneMettis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent activitePlanLigneMettis = new Intent(PlanLigne.this, PlanLigneMettis.class);
+                activitePlanLigneMettis.putExtra(planLigneMettis, 15);
+                startActivity(activitePlanLigneMettis);
             }
         });
     }
