@@ -24,6 +24,6 @@ public class PlanLigne2 extends Activity {
         planSettings.setBuiltInZoomControls(true);
 
         //...et on charge la page
-        planweb.loadUrl("file:///android_asset/ligne1vertical.jpg");
+        planweb.loadUrl("file:///android_asset/ligne2.jpg");
     }
 }
