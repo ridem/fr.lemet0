@@ -219,7 +219,7 @@ public class PlanLigne extends Activity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent activitePlanLigneMettisMettis = new Intent(PlanLigne.this, PlanLigneMettis.class);
+                Intent activitePlanLigneMettis = new Intent(PlanLigne.this, PlanLigneMettis.class);
                 activitePlanLigneMettis.putExtra(planLigneMettis, 15);
                 startActivity(activitePlanLigneMettis);
             }
