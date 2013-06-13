@@ -16,13 +16,13 @@ public class PlanReseau extends Activity {
         setContentView(R.layout.plan_reseau);
 
         WebView planweb = (WebView)findViewById(R.id.webview);
-
-        //...on active JavaScript...
         WebSettings planSettings = planweb.getSettings();
         planSettings.setSupportZoom(true);
         planSettings.setBuiltInZoomControls(true);
+        planSettings.setDefaultZoom(WebSettings.ZoomDensity.CLOSE);
+        //planweb.loadUrl("file:///android_asset/planlemet.png");
 
-        //...et on charge la page
-        planweb.loadUrl("file:///android_asset/testm.jpg");
+        //planweb.loadDataWithBaseURL("file:///android_asset/","<html><center><img src=\"planlemet.png\" ali></html>","text/html","utf-8","");
+        planweb.loadDataWithBaseURL("file:///android_asset/","<html><head><style type='text/css'>body{margin:auto auto;text-align:center;} img{width:auto;} </style></head><body><img src='planlemet.png'/></body></html>" ,"text/html",  "UTF-8","");
     }
 }
