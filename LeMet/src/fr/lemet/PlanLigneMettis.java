@@ -12,7 +12,7 @@ public class PlanLigneMettis extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plan_reseau);
+        setContentView(R.layout.plan_lignemettis);
         WebView planweb = (WebView)findViewById(R.id.webview);
         WebSettings planSettings = planweb.getSettings();
         planSettings.setSupportZoom(true);
