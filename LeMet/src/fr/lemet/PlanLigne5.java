@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class PlanReseau extends Activity {
+public class PlanLigne5 extends Activity {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,6 @@ public class PlanReseau extends Activity {
         planSettings.setBuiltInZoomControls(true);
 
         //...et on charge la page
-        planweb.loadUrl("file:///android_asset/testm.jpg");
+        planweb.loadUrl("file:///android_asset/ligne1vertical.jpg");
     }
 }
