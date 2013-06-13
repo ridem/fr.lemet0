@@ -20,7 +20,7 @@ public class PlanLigneMettis extends Activity {
         planSettings.setLoadWithOverviewMode(true);
         planSettings.setUseWideViewPort(true);
         //planSettings.setDefaultZoom(WebSettings.ZoomDensity.CLOSE);
-        planweb.loadUrl("file:///android_asset/planlemet.png");
+        planweb.loadUrl("file:///android_asset/planmettis.png");
         //planSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         //planweb.loadDataWithBaseURL("file:///android_asset/","<html><center><img src=\"planlemet.png\" ali></html>","text/html","utf-8","");
         //planweb.loadDataWithBaseURL("file:///android_asset/","<html><body><img src=\"planlemet.png\" /></body></html>" ,"text/html",  "UTF-8","");

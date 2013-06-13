@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Plan des Mettis"
-            android:layout_below="@+id/plan des lignes"
+            android:layout_below="@+id/plandeslignes"
             android:layout_marginTop="105dp"
             android:layout_marginLeft="150dp"/>
 
