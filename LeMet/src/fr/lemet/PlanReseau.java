@@ -15,14 +15,13 @@ public class PlanReseau extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plan_reseau);
 
-        // Instanciation du WebView...
-        WebView wvSite = (WebView)findViewById(R.id.webview);
+        WebView planweb = (WebView)findViewById(R.id.webview);
 
         //...on active JavaScript...
-        WebSettings webSettings = wvSite.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-
+        WebSettings planSettings = planweb.getSettings();
+        planSettings.setSupportZoom(true);
+        planSettings.setBuiltInZoomControls(true);
         //...et on charge la page
-        wvSite.loadUrl("file:///");
+        planweb.loadUrl("file:///android_asset/testm.jpg");
     }
 }

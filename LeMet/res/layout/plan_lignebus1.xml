@@ -8,8 +8,8 @@
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/ligne1"
-            android:src="@drawable/ligne1"
+            android:id="@+id/ligne1vertical"
+            android:src="@drawable/ligne1vertical"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="22dp"
