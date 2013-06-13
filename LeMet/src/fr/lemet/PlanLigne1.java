@@ -17,13 +17,7 @@ public class PlanLigne1 extends Activity {
         setContentView(R.layout.plan_reseau);
 
         WebView planweb = (WebView)findViewById(R.id.webview);
-
-        //...on active JavaScript...
-        WebSettings planSettings = planweb.getSettings();
-        planSettings.setSupportZoom(true);
-        planSettings.setBuiltInZoomControls(true);
-
-        //...et on charge la page
+        planweb.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         planweb.loadUrl("file:///android_asset/ligne1vertical.jpg");
     }
 }
