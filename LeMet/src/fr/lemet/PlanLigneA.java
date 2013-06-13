@@ -15,6 +15,7 @@ public class PlanLigneA extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plan_reseau);
 
+
         WebView planweb = (WebView)findViewById(R.id.webview);
 
         //...on active JavaScript...

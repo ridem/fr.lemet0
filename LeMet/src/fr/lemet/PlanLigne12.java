@@ -26,4 +26,3 @@ public class PlanLigne12 extends Activity {
         planweb.loadUrl("file:///android_asset/ligne1vertical.jpg");
     }
 }
-1

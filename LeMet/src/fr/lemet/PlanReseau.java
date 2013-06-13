@@ -15,6 +15,7 @@ public class PlanReseau extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plan_reseau);
 
+
         WebView planweb = (WebView)findViewById(R.id.webview);
         WebSettings planSettings = planweb.getSettings();
         planSettings.setSupportZoom(true);
