@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class Plans extends Activity {
-    public final static String planReseau = "com.example.lemet.planReseau";
-    public final static String planLigne = "com.example.lemet.planLigne";
+    public final static String planReseau = "fr.lemet.planReseau";
+    public final static String planLigne = "fr.lemet.planLigne";
 
     private Button passerellePlanReseau = null;
     private Button passerellePlanLigne = null;
