@@ -14,7 +14,7 @@
             android:text="Plan du réseau" />
 
     <Button
-            android:id="@+id/plan_lignes"
+            android:id="@+id/plan_ligne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/plan_reseau"

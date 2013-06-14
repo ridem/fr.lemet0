@@ -17,6 +17,6 @@ public class PlanLigne1 extends Activity {
 
         WebView planweb = (WebView)findViewById(R.id.webview);
         planweb.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-        planweb.loadUrl("file:///android_asset/ligne1vertical.jpg");
+        planweb.loadUrl("file:///android_asset/ligne1.jpg");
     }
 }

@@ -3,7 +3,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-
     <TextView
             android:id="@+id/plandeslignes"
             android:layout_width="wrap_content"
@@ -42,12 +41,12 @@
             android:layout_marginLeft="20dp"/>
 
     <Button
-            android:id="@+id/mettis"
+            android:id="@+id/plan_mettis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Plan des Mettis"
+            android:text="@string/plan_mettis"
             android:layout_below="@+id/plandeslignes"
-            android:layout_marginTop="105dp"
+            android:layout_marginTop="68dp"
             android:layout_marginLeft="150dp"/>
 
     <TextView

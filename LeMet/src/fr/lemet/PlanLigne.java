@@ -73,7 +73,7 @@ public class PlanLigne extends Activity {
         passerellePlanLigneBus17 = (Button) findViewById(R.id.bus_17);
         passerellePlanLigneA = (Button) findViewById(R.id.mettis_a);
         passerellePlanLigneB = (Button) findViewById(R.id.mettis_b);
-        passerellePlanLigneMettis = (Button) findViewById(R.id.mettis);
+        passerellePlanLigneMettis = (Button) findViewById(R.id.plan_mettis);
 
         passerellePlanLigneBus1.setOnClickListener(new View.OnClickListener() {
             @Override

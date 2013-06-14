@@ -19,7 +19,7 @@ public class Plans extends Activity {
         setContentView(R.layout.layout_plans);
 
         passerellePlanReseau = (Button) findViewById(R.id.plan_reseau);
-        passerellePlanLigne = (Button) findViewById(R.id.plan_lignes);
+        passerellePlanLigne = (Button) findViewById(R.id.plan_ligne);
 
         passerellePlanReseau.setOnClickListener(new View.OnClickListener() {
             @Override
