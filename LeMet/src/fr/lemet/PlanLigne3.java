@@ -13,7 +13,7 @@ public class PlanLigne3 extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plan_reseau);
+        setContentView(R.layout.different_plan);
 
         WebView planweb = (WebView)findViewById(R.id.webview);
         planweb.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);

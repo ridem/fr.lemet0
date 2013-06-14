@@ -8,12 +8,11 @@ import android.widget.Button;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-// juan tu pus
 public class PlanLigneMettis extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plan_lignemettis);
+        setContentView(R.layout.different_plan);
         WebView planweb = (WebView)findViewById(R.id.webview);
         planweb.setInitialScale(115);
         //Display display = getWindowManager().getDefaultDisplay();
