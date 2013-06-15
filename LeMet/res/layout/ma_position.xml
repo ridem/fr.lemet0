@@ -5,20 +5,22 @@
 
     <Button
             android:id="@+id/position_gps"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="110dp"
             android:layout_alignRight="@+id/arrets_prox"
             android:layout_alignLeft="@+id/arrets_prox"
-            android:text="Ma position" />
+            android:text="Ma position"
+            android:background="#99CC00"/>
 
     <Button
             android:id="@+id/arrets_prox"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/position"
             android:layout_marginTop="30dp"
-            android:text="Arrêts à proximité" />
+            android:text="Arrêts à proximité"
+            android:background="#99CC00"/>
 
 </RelativeLayout>

@@ -27,30 +27,33 @@
 
         <Button
                 android:id="@+id/mettis_a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Mettis A"
                 android:layout_below="@+id/plandeslignes"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="#8E629F"/>
 
         <Button
                 android:id="@+id/mettis_b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Mettis B"
                 android:layout_below="@+id/mettis_a"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="#FFD75D"/>
 
         <Button
                 android:id="@+id/plan_mettis"
-                android:layout_width="wrap_content"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="@string/plan_mettis"
                 android:layout_below="@+id/plandeslignes"
                 android:layout_marginTop="68dp"
-                android:layout_marginLeft="150dp"/>
+                android:layout_marginLeft="150dp"
+                android:background="#FF9900"/>
 
         <TextView
                 android:id="@+id/bus"
@@ -58,110 +61,121 @@
                 android:layout_height="wrap_content"
                 android:text="Bus"
                 android:layout_below="@+id/mettis_b"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"/>
 
         <Button
                 android:id="@+id/bus_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 1"
                 android:layout_below="@+id/bus"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="#57B760"/>
 
         <Button
                 android:id="@+id/bus_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 2"
                 android:layout_below="@+id/bus_1"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:background="#DE8656"/>
 
         <Button
                 android:id="@+id/bus_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 3"
                 android:layout_below="@+id/bus_2"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:background="#864A2E"/>
 
         <Button
                 android:id="@+id/bus_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 4"
                 android:layout_below="@+id/bus_3"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:background="#039FD8"/>
 
         <Button
                 android:id="@+id/bus_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 5"
                 android:layout_below="@+id/bus_4"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:background="#AC4354"/>
 
         <Button
                 android:id="@+id/bus_11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 11"
                 android:layout_alignTop="@+id/bus_1"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:background="#9098C9"/>
 
         <Button
                 android:id="@+id/bus_12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 12"
                 android:layout_alignTop="@+id/bus_2"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:background="#DB729A"/>
 
         <Button
                 android:id="@+id/bus_13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 13"
                 android:layout_alignTop="@+id/bus_3"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:background="#A8D594"/>
 
         <Button
                 android:id="@+id/bus_14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 14"
                 android:layout_alignTop="@+id/bus_4"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:background="#4A4259"/>
 
         <Button
                 android:id="@+id/bus_15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 15"
                 android:layout_alignTop="@+id/bus_5"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:background="#ACB25A"/>
 
         <Button
                 android:id="@+id/bus_16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 16"
                 android:layout_alignTop="@+id/bus_11"
-                android:layout_toRightOf="@+id/plandeslignes"/>
+                android:layout_marginLeft="250dp"
+                android:background="#E6C9BB"/>
 
         <Button
                 android:id="@+id/bus_17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
                 android:text="Ligne 17"
-
                 android:layout_above="@+id/bus_3"
-                android:layout_alignLeft="@+id/bus_16"/>
+                android:layout_alignLeft="@+id/bus_16"
+                android:background="#8E2359"/>
     </RelativeLayout>
 </ScrollView>
 

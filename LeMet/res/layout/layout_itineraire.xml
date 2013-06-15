@@ -9,8 +9,7 @@
             android:layout_height="wrap_content"
             android:hint="Départ"
             android:inputType="text"
-            android:layout_marginTop="50dp"
-            />
+            android:layout_marginTop="50dp"/>
 
     <EditText
             android:id="@+id/arrivee"
@@ -19,17 +18,17 @@
             android:hint="Arrivée"
             android:inputType="text"
             android:layout_below="@+id/depart"
-            android:layout_marginTop="50dp"
-            />
+            android:layout_marginTop="50dp"/>
 
     <Button
             android:id="@+id/recherche"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:text="Rechercher"
             android:layout_below="@+id/arrivee"
             android:gravity="center"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="50dp"
+            android:background="#CC3366"/>
 
 </RelativeLayout>

@@ -7,20 +7,22 @@
 
     <Button
             android:id="@+id/plan_reseau"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="80dp"
-            android:text="Plan du réseau" />
+            android:text="Plan du réseau"
+            android:background="#FF9900"/>
 
     <Button
             android:id="@+id/plan_ligne"
-            android:layout_width="wrap_content"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/plan_reseau"
             android:layout_alignRight="@+id/plan_reseau"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:layout_marginBottom="50dp"
-            android:text="Plan des lignes" />
+            android:text="Plan des lignes"
+            android:background="#FF9900"/>
 
 </RelativeLayout>

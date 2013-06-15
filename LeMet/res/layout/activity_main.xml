@@ -11,38 +11,51 @@
 
     <Button
             android:id="@+id/plans"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
+            android:background="#FF9900"
             android:text="Plans" />
 
     <Button
             android:id="@+id/itineraire"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/plans"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
+            android:background="#CC3366"
             android:text="Itinéraires" />
 
     <Button
             android:id="@+id/horaires"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/itineraire"
             android:layout_marginTop="30dp"
+            android:background="#0099CC"
+            android:layout_centerHorizontal="true"
             android:text="Horaires" />
 
     <Button
             android:id="@+id/maposition"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/horaires"
             android:layout_marginTop="30dp"
+            android:background="#99CC00"
             android:text="Ma Position" />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/le_met_logo"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"/>
 
 </RelativeLayout>
