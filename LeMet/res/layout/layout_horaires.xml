@@ -3,22 +3,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-    <Button
-            android:id="@+id/arrets_prox"
+    <TextView
+            android:id="@+id/titre_horaires"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="103dp"
-            android:text="Arrêts à proximité" />
-
-    <Button
-            android:id="@+id/newt_passages"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/arrets_prox"
-            android:layout_alignLeft="@+id/arrets_prox"
-            android:layout_below="@+id/arrets_prox"
-            android:layout_marginTop="30dp"
-            android:text="Prochains passages" />
-
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Horaires"
+            android:layout_centerHorizontal="true"/>
 </RelativeLayout>
