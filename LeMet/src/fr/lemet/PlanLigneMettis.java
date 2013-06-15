@@ -12,11 +12,10 @@ public class PlanLigneMettis extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.different_plan);
+        setContentView(R.layout.plan_reseau);
         WebView planweb = (WebView)findViewById(R.id.webview);
-        planweb.setInitialScale(115);
-        //Display display = getWindowManager().getDefaultDisplay();
-        //int width=display.getWidth();
+        planweb.setInitialScale(95);
+
         WebSettings planSettings = planweb.getSettings();
         planSettings.setSupportZoom(true);
         planSettings.setBuiltInZoomControls(true);
@@ -28,5 +27,6 @@ public class PlanLigneMettis extends Activity {
         //planweb.loadDataWithBaseURL("file:///android_asset/","<html><center><img src=\"planlemet.png\" ali></html>","text/html","utf-8","");
         //planweb.loadDataWithBaseURL("file:///android_asset/","<html><head><style type='text/css'>body{margin:O 0; text-align:center;} img{border:0px; text-align:center;} </style></head><body><img src=\"planlemet.png\" /></body></html>" ,"text/html",  "UTF-8","");
 
+        //planweb.setPictureListener(new MyPictureListener());
     }
 }
