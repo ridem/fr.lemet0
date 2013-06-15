@@ -7,12 +7,16 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
+import org.hsqldb.jdbc.JDBCDriver;
+
+import fr.lemet.gtfs.GtfsBase;
+
 public class MainActivity extends Activity {
 
-    public final static String plans = "com.example.lemet.plans";
-    public final static String horaires = "com.example.lemet.horaires";
-    public final static String itineraire = "com.example.lemet.itineraire";
-    public final static String position = "com.example.lemet.position";
+    public final static String plans = "fr.lemet.plans";
+    public final static String horaires = "fr.lemet.horaires";
+    public final static String itineraire = "fr.lemet.itineraire";
+    public final static String position = "fr.lemet.position";
 
     private Button passerellePlans = null;
     private Button passerelleHoraires = null;
@@ -23,7 +27,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         passerellePlans = (Button) findViewById(R.id.plans);
         passerelleHoraires = (Button) findViewById(R.id.horaires);
         passerelleItineraire = (Button) findViewById(R.id.itineraire);
@@ -32,15 +35,15 @@ public class MainActivity extends Activity {
         passerellePlans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              // Le premier paramètre est le nom de l'activité actuelle
-              // Le second est le nom de l'activité de destination
-              Intent activitePlans = new Intent(MainActivity.this, Plans.class);
+                // Le premier paramètre est le nom de l'activité actuelle
+                // Le second est le nom de l'activité de destination
+                Intent activitePlans = new Intent(MainActivity.this, Plans.class);
 
-              // On rajoute un extra
-              activitePlans.putExtra(plans, 31);
+                // On rajoute un extra
+                activitePlans.putExtra(plans, 31);
 
-              // Puis on lance l'intent
-              startActivity(activitePlans);
+                // Puis on lance l'intent
+                startActivity(activitePlans);
 
             }
         });

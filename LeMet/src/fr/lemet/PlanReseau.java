@@ -1,12 +1,14 @@
 package fr.lemet;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Picture;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -17,6 +19,8 @@ public class PlanReseau extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.different_plan);
         WebView planweb = (WebView)findViewById(R.id.webview);
+        //planweb.setPadding(0, 0, 0, 0);
+        //planweb.setInitialScale(getScale());
         planweb.setInitialScale(70);
 
         WebSettings planSettings = planweb.getSettings();
@@ -32,7 +36,13 @@ public class PlanReseau extends Activity {
 
         //planweb.setPictureListener(new MyPictureListener());
     }
-
+/*    private int getScale(){
+        Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+        int width = display.getWidth();
+        Double val = new Double(width)/new Double(2312);
+        val = val * 110d;
+        return val.intValue();
+    }*/
 /*
     class MyPictureListener implements WebView.PictureListener {
 
