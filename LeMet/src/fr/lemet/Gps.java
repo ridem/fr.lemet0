@@ -1,6 +1,5 @@
 package fr.lemet;
 
-
 import java.io.IOException;
 import java.util.List;
 
@@ -155,7 +154,7 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
 
     public void onLocationChanged(Location location) {
         //Lorsque la position change...
-        Log.i("Géolocalisation", "La position a changé.");
+        Log.i("Tuto géolocalisation", "La position a changé.");
         //... on stop le cercle de chargement
         setProgressBarIndeterminateVisibility(false);
         //... on active le bouton pour afficher l'adresse
@@ -170,7 +169,7 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
 
     public void onProviderDisabled(String provider) {
         //Lorsque la source (GSP ou réseau GSM) est désactivé
-        Log.i("Géolocalisation", "La source a été désactivé");
+        Log.i("Tuto géolocalisation", "La source a été désactivé");
         //...on affiche un Toast pour le signaler à l'utilisateur
         Toast.makeText(Gps.this,
                 String.format("La source \"%s\" a été désactivé", provider),
@@ -182,10 +181,10 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
     }
 
     public void onProviderEnabled(String provider) {
-        Log.i("Géolocalisation", "La source a été activé.");
+        Log.i("Tuto géolocalisation", "La source a été activé.");
     }
     public void onStatusChanged(String provider, int status, Bundle extras) {
-        Log.i("Géolocalisation", "Le statut de la source a changé.");
+        Log.i("Tuto géolocalisation", "Le statut de la source a changé.");
     }
 
 }
