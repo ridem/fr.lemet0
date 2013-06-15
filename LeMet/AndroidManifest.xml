@@ -38,15 +38,19 @@
                 android:label="@string/app_name" >
         </activity>
         <activity
-                android:name="fr.lemet.Plans"
-                android:label="@string/app_name" >
-        </activity>
-        <activity
                 android:name="fr.lemet.MaPosition"
                 android:label="@string/app_name" >
         </activity>
         <activity
+                android:name="fr.lemet.Plans"
+                android:label="@string/app_name" >
+        </activity>
+        <activity
                 android:name="fr.lemet.PlanReseau"
+                android:label="@string/app_name" >
+        </activity>
+        <activity
+                android:name="fr.lemet.Gps"
                 android:label="@string/app_name" >
         </activity>
         <activity
