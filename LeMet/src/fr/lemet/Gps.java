@@ -17,13 +17,18 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class Gps extends Activity implements OnClickListener, LocationListener{
     private LocationManager lManager;
     private Location location;
     private String choix_source = "";
+
+    public final static String afficheMap = "fr.lemet.afficheMap";
+    private Button passerelleAfficheMap = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,21 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 
         setContentView(R.layout.gps);
+
+        passerelleAfficheMap = (Button) findViewById(R.id.affiche_carte);
+        passerelleAfficheMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Le premier paramètre est le nom de l'activité actuelle
+                // Le second est le nom de l'activité de destination
+                Intent activiteAfficheMap = new Intent(Gps.this, MapActivity.class);
+
+                activiteAfficheMap.putExtra(afficheMap, 31);
+
+                // Puis on lance l'intent
+                startActivity(activiteAfficheMap);
+            }
+        });
 
         //On récupère le service de localisation
         lManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
@@ -67,7 +87,6 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
     private void reinitialisationEcran(){
         ((TextView)findViewById(R.id.latitude)).setText("0.0");
         ((TextView)findViewById(R.id.longitude)).setText("0.0");
-        ((TextView)findViewById(R.id.altitude)).setText("0.0");
         ((TextView)findViewById(R.id.adresse)).setText("");
 
         findViewById(R.id.obtenir_position).setEnabled(false);
@@ -117,7 +136,6 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
         //On affiche les informations de la position a l'écran
         ((TextView)findViewById(R.id.latitude)).setText(String.valueOf(location.getLatitude()));
         ((TextView)findViewById(R.id.longitude)).setText(String.valueOf(location.getLongitude()));
-        ((TextView)findViewById(R.id.altitude)).setText(String.valueOf(location.getAltitude()));
     }
 
     private void afficherAdresse() {
