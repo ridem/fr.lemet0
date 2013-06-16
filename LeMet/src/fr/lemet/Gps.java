@@ -1,6 +1,7 @@
 package fr.lemet;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.List;
 
 import android.app.Activity;
@@ -22,10 +23,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Intent;
 
+
 public class Gps extends Activity implements OnClickListener, LocationListener{
     private LocationManager lManager;
     private Location location;
-    private String choix_source = "";
 
     public final static String afficheMap = "fr.lemet.afficheMap";
     private Button passerelleAfficheMap = null;
@@ -36,7 +37,6 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
 
         //On spécifie que l'on va avoir besoin de gérer l'affichage du cercle de chargement et on l'éteint
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-
 
         setContentView(R.layout.gps);
         setProgressBarIndeterminateVisibility(false);
@@ -63,7 +63,6 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
         reinitialisationEcran();
 
         //On affecte un écouteur d'évènement aux boutons
-        // findViewById(R.id.choix_source).setOnClickListener(this);
         findViewById(R.id.obtenir_position).setOnClickListener(this);
         findViewById(R.id.afficherAdresse).setOnClickListener(this);
     }
@@ -111,8 +110,7 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
     private void afficherAdresse() {
         setProgressBarIndeterminateVisibility(true);
 
-        //Le geocoder permet de récupérer ou chercher des adresses
-        //gràce à un mot clé ou une position
+        //Le geocoder permet de récupérer ou chercher des adresse gràce à un mot clé ou une position
         Geocoder geo = new Geocoder(Gps.this);
         try {
             //Ici on récupère la premiere adresse trouvé gràce à la position que l'on a récupéré
