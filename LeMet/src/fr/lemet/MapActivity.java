@@ -1,11 +1,13 @@
 package fr.lemet;
 
+import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapController;
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.ScaleBarOverlay;
 import org.osmdroid.views.overlay.SimpleLocationOverlay;
 import android.app.Activity;
 import android.os.Bundle;
+
 
 public class MapActivity extends Activity {
     private MapView mapView;
@@ -21,6 +23,7 @@ public class MapActivity extends Activity {
         mapView.setBuiltInZoomControls(true);
         mapView.setMultiTouchControls(true);
         mapController = this.mapView.getController();
-        mapController.setZoom(40);
+        mapController.setZoom(30);
+        mapController.setCenter(new GeoPoint(49104708, 6220277));
     }
 }
