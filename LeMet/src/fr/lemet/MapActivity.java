@@ -21,6 +21,6 @@ public class MapActivity extends Activity {
         mapView.setBuiltInZoomControls(true);
         mapView.setMultiTouchControls(true);
         mapController = this.mapView.getController();
-        mapController.setZoom(2);
+        mapController.setZoom(40);
     }
 }
