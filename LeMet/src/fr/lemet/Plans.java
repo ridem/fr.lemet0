@@ -40,5 +40,7 @@ public class Plans extends Activity {
                 startActivity(activitePlanLigne);
             }
         });
+
+
     }
 }
