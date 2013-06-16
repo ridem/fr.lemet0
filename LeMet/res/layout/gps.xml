@@ -47,34 +47,26 @@
                   android:layout_alignLeft="@+id/latitude"/>
 
 
-            <Button
-                android:id="@+id/choix_source"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="Choisir la source"
-                android:layout_below="@+id/TextView02"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="20dp"
-                android:background="#99CC00"/>
-
         <Button
                 android:id="@+id/obtenir_position"
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Obtenir position"
                 android:background="#99CC00"
-                android:layout_alignTop="@+id/choix_source"
-                android:layout_centerHorizontal="true"/>
+                android:layout_below="@+id/TextView02"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"/>
 
 
         <Button
                 android:id="@+id/afficherAdresse"
-                android:layout_width="100dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="Afficher adresse"
                 android:background="#99CC00"
                 android:layout_alignTop="@+id/obtenir_position"
-                android:layout_alignRight="@+id/latitude"/>
+                android:layout_toRightOf="@+id/obtenir_position"
+                android:layout_marginLeft="40dp"/>
 
 
 

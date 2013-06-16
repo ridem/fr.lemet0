@@ -34,10 +34,12 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //On spécifie que l'on va avoir besoin de gérer l'affichage du cercle de chargement
+        //On spécifie que l'on va avoir besoin de gérer l'affichage du cercle de chargement et on l'éteint
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 
+
         setContentView(R.layout.gps);
+        setProgressBarIndeterminateVisibility(false);
 
         passerelleAfficheMap = (Button) findViewById(R.id.affiche_carte);
         passerelleAfficheMap.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +63,7 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
         reinitialisationEcran();
 
         //On affecte un écouteur d'évènement aux boutons
-        findViewById(R.id.choix_source).setOnClickListener(this);
+        // findViewById(R.id.choix_source).setOnClickListener(this);
         findViewById(R.id.obtenir_position).setOnClickListener(this);
         findViewById(R.id.afficherAdresse).setOnClickListener(this);
     }
@@ -69,9 +71,6 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
     //Méthode déclencher au clique sur un bouton
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.choix_source:
-                choisirSource();
-                break;
             case R.id.obtenir_position:
                 obtenirPosition();
                 break;
@@ -89,36 +88,7 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
         ((TextView)findViewById(R.id.longitude)).setText("0.0");
         ((TextView)findViewById(R.id.adresse)).setText("");
 
-        findViewById(R.id.obtenir_position).setEnabled(false);
         findViewById(R.id.afficherAdresse).setEnabled(false);
-    }
-
-    private void choisirSource() {
-        reinitialisationEcran();
-
-        //On demande au service la liste des sources disponibles.
-        List <String> providers = lManager.getProviders(true);
-        final String[] sources = new String[providers.size()];
-        int i =0;
-        //on stock le nom de ces source dans un tableau de string
-        for(String provider : providers)
-            sources[i++] = provider;
-
-        //On affiche la liste des sources dans une fenêtre de dialog
-        //Pour plus d'infos sur AlertDialog, vous pouvez suivre le guide
-        //http://developer.android.com/guide/topics/ui/dialogs.html
-        new AlertDialog.Builder(Gps.this)
-                .setItems(sources, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        findViewById(R.id.obtenir_position).setEnabled(true);
-                        //on stock le choix de la source choisi
-                        choix_source = sources[which];
-                        //on ajoute dans la barre de titre de l'application le nom de la source utilisé
-                        setTitle(String.format("%s - %s", getString(R.string.app_name),
-                                choix_source));
-                    }
-                })
-                .create().show();
     }
 
     private void obtenirPosition() {
@@ -129,7 +99,7 @@ public class Gps extends Activity implements OnClickListener, LocationListener{
         //sur la source (le provider) choisie, toute les minutes (60000millisecondes).
         //Le paramètre this spécifie que notre classe implémente LocationListener et recevra
         //les notifications.
-        lManager.requestLocationUpdates(choix_source, 60000, 0, this);
+        lManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000, 0, this);
     }
 
     private void afficherLocation() {
