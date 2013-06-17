@@ -60,8 +60,8 @@ public class MapActivity extends Activity implements LocationListener {
 
         @Override
         public void onLocationChanged(Location location) {
-            latitude = location.getLatitude() + 0.0014;
-            longitude = location.getLongitude()+ 0.0035;
+            latitude = location.getLatitude();
+            longitude = location.getLongitude();
             altitude = location.getAltitude();
             accuracy = location.getAccuracy();
 
