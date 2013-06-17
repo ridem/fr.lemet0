@@ -28,11 +28,11 @@ public class Horaires extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_horaires);
         final ListView listview = (ListView) findViewById(R.id.listView);
-
-        String resource = "classpath:org/onebusaway/gtfs/examples/hibernate-configuration-examples.xml";
-        HibernateGtfsFactory factory = GtfsBase.createHibernateGtfsFactory(resource);
-        GtfsReader reader = new GtfsReader();
-        try {
+        setTitle("Horaires");
+        //String resource = "classpath:org/onebusaway/gtfs/examples/hibernate-configuration-examples.xml";
+        //HibernateGtfsFactory factory = GtfsBase.createHibernateGtfsFactory(resource);
+        //GtfsReader reader = new GtfsReader();
+/*        try {
             reader.setInputLocation(new File("file:assets/gtfs/"));
         } catch (IOException e) {
             e.printStackTrace();
@@ -48,10 +48,11 @@ public class Horaires extends Activity {
 
         Collection<Stop> stops = dao.getAllStops();
 
-        List<String> values = new ArrayList<String>();
+
 
         for (Stop stop : stops)
-            values.add(stop.getName());
+            values.add(stop.getName());*/
+        List<String> values = new ArrayList<String>();
         values.add("Android");
         values.add("iPhone");
         //String[] values = new String[] { "Android", "iPhone", "WindowsMobile",

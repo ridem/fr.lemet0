@@ -17,6 +17,7 @@ public class PlanLigneMettis extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.different_plan);
         WebView planweb = (WebView)findViewById(R.id.webview);
+        setTitle("Lignes Mettis");
         //planweb.setPadding(0,0,0,0);
         planweb.setInitialScale(110);
         WebSettings planSettings = planweb.getSettings();
